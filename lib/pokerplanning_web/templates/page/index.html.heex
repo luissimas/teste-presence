@@ -1,0 +1,13 @@
+<section class="phx-hero">
+  <.form let={f} for={:join} phx-submit="join_room">
+    <%= label f, :username %>
+    <%= text_input f, :username %>
+    <%= error_tag f, :username %>
+
+    <%= label f, :room %>
+    <%= text_input f, :room %>
+    <%= error_tag f, :room %>
+
+    <%= submit "Join" %>
+  </.form>
+</section>
